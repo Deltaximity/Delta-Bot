@@ -1,0 +1,22 @@
+{
+  "name": "delta-bot",
+  "version": "1.0.0",
+  "description": "Just a bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DELTA-codes/Delta-Bot.git"
+  },
+  "author": "Delta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DELTA-codes/Delta-Bot/issues"
+  },
+  "homepage": "https://github.com/DELTA-codes/Delta-Bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.0"
+  }
+}
