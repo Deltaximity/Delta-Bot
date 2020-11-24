@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/DELTA-codes/Delta-Bot#readme",
   "dependencies": {
-    "discord.js": "^12.5.0"
+    "discord.js": "^12.5.0",
+    "node-fetch": "^2.6.1"
   }
 }
