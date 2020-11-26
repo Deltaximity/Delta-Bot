@@ -4,7 +4,7 @@ module.exports = {
     execute(message, args) {
         message.channel.send("Wanna hear my secret?");
         setTimeout(() => {
-            message.channel.send("Between you and me... **I think Delta is dumb**");
+            message.channel.send("Between you and me... **I think Delta is very dumb**");
             setTimeout(() => {
                 message.channel.send("Don't tell him okay?");
             }, 2000);
