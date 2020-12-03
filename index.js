@@ -32,8 +32,6 @@ client.on('message', message => {
         message.channel.send("Hold on... give Delta a moment, he's probably drowning in the toilet.");
     } else if (checkedMessage.includes("welcome")) {
         message.channel.send("Welcome!! ^^");
-    } else if (checkedMessage.includes("shame")) {
-        message.channel.send("Shame? I left that in my dad's testicles.");
     } else if (checkedMessage === "owo") {
         message.channel.send("What's this?");
     } else if (checkedMessage === "no u" || checkedMessage === "no you") {
