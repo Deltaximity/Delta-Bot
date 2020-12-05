@@ -48,8 +48,6 @@ client.on('message', message => {
         message.channel.send("Wut?");
     } else if (checkedMessage.includes("nani")) {
         message.channel.send("NANI!?");
-    } else if (checkedMessage.includes("ahh") || checkedMessage.includes("aaa")) {
-        message.channel.send("AAH?");
     } else if (checkedMessage === "interesting") {
         message.channel.send("Stop saying that!");
     } else if (checkedMessage === "you suck") {
