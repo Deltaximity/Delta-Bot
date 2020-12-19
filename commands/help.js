@@ -4,7 +4,7 @@ module.exports = {
     execute(message, args) {
         const Discord = require('discord.js');
 
-        message.channel.send(`My prefix is \`!d\` following up with a \`<command>\``);
+        message.channel.send(`My prefix is \`^\` following up with a \`<command>\`, example: \`^hi\``);
         
         const embed = new Discord.MessageEmbed()
         .setColor('#FFFFFF')
