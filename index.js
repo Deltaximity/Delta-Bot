@@ -1,7 +1,7 @@
 require('dotenv').config();
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '!d ';
+const prefix = '^';
 const fs = require('fs');
 
 client.commands = new Discord.Collection();
@@ -40,7 +40,7 @@ client.on('message', message => {
         message.channel.send("Fine! you win :x");
     } else if (checkedMessage.includes("huh")) {
         message.channel.send("Huh?");
-    } else if (checkedMessage.includes("hm")) {
+    } else if (checkedMessage.includes("hmm")) {
         message.channel.send("Hmm indeed...") || message.channel.send("Hm?");
     } else if (checkedMessage.includes("pog")) {
         message.channel.send("POG!! :O");
