@@ -10,7 +10,7 @@ module.exports = {
         .setColor('#FFFFFF')
         // .setTitle("Commands")
         .addFields(
-            { name: 'Commands:', value: `\`hi\` - \`help\` - \`dev\` - \`sad\` - \`joke\` - \`define\` - \`secret\``},
+            { name: 'Commands:', value: `\`hi\` - \`help\` - \`dev\` - \`sad\` - \`say\` - \`joke\` - \`define\` - \`secret\``},
             { name: 'Words I listen to (no prefix):', value: `\`owo\` - \`welcome\` - \`no u\` - \`hmm\` - \`huh\` - \`pog\` - \`nani\` - \`wut\` - and some more...` }
         );
 
