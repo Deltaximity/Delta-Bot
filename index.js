@@ -80,6 +80,8 @@ client.on('message', message => {
         client.commands.get('urban').execute(message, args);
     } else if (command === 'joke') {
         client.commands.get('joke').execute(message, args);
+    } else if (command === 'say') {
+        client.commands.get('say').execute(message, args);
     }
 });
 
