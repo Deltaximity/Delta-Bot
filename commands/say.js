@@ -7,8 +7,9 @@ module.exports = {
         let actualInput = input.substr('5');
 
         // delete message
-        
-        // return input
-        message.channel.send(actualInput);
+        message.channel.bulkDelete(1).then(() => {
+            // return input
+            message.channel.send(actualInput);
+        });
     }
 }
