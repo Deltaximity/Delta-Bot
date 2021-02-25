@@ -17,6 +17,7 @@ const escapeRegex = str => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 client.once('ready', () => {
     console.log('Delta bot is online!');
+    client.user.setActivity(`Just Vibing | ${prefix}help`, {type: 'PLAYING'}).catch.console.error;
 });
 
 client.on('message', message => {
@@ -33,13 +34,13 @@ client.on('message', message => {
     } else if (checkedMessage.includes("welcome")) {
         message.channel.send("Welcome!! ^^");
     } else if (checkedMessage === "owo") {
-        message.channel.send("What's this?");
+        message.channel.send("What's This?");
+    } else if (checkedMessage === "uwu") {
+        message.channel.send("UwU");
     } else if (checkedMessage === "no u" || checkedMessage === "no you") {
         message.channel.send("no u");
     } else if (checkedMessage.includes("no u") || checkedMessage.includes("no you")) {
         message.channel.send("Fine! you win :x");
-    } else if (checkedMessage.includes("huh")) {
-        message.channel.send("Huh?");
     } else if (checkedMessage.includes("hmm")) {
         message.channel.send("Hmm indeed...") || message.channel.send("Hm?");
     } else if (checkedMessage.includes("pog")) {
@@ -62,8 +63,8 @@ client.on('message', message => {
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
 
-    if (command === 'hello' || command === 'hi' || command === 'hey') {
-        client.commands.get('hello').execute(message, args);
+    if (command === 'say') {
+        client.commands.get('say').execute(message, args);
     } else if (command === 'help') {
         client.commands.get('help').execute(message, args);
     } else if (command === 'dev' || command === 'developer' || command === 'about') {
@@ -80,8 +81,8 @@ client.on('message', message => {
         client.commands.get('urban').execute(message, args);
     } else if (command === 'joke') {
         client.commands.get('joke').execute(message, args);
-    } else if (command === 'say') {
-        client.commands.get('say').execute(message, args);
+    } else if (command === 'hello' || command === 'hi' || command === 'hey') {
+        client.commands.get('hello').execute(message, args);
     }
 });
 

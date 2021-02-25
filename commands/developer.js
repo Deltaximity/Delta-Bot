@@ -8,7 +8,7 @@ module.exports = {
             .setColor('#0099ff')
             .setTitle('DELTA-codes - Github')
             .setURL('https://github.com/DELTA-codes')
-            .setDescription('I\'m being programmed by <@!483941946495336487>! click the link above to see my code on Github!')
+            .setDescription('I\'m being programmed by <@!483941946495336487>. click the link above to see my code on Github!')
 
         message.channel.send(devEmbed);
     }
